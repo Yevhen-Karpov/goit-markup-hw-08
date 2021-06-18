@@ -1,0 +1,30 @@
+/*.our-work {
+    display: flex;
+    justify-content: space-between;
+  }
+  .example {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+      .text-work {
+        width: 370px;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        position: absolute;
+        color: var(--main-background);
+        bottom: 0;
+        left: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        background: rgba(47, 48, 58, 0.8);
+      }
+  }*/
+  .work {
+    display: none;
+  } 
+  
