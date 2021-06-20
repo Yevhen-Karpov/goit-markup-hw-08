@@ -5,7 +5,7 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    align-items: baseline;
+    
     }
     &__social {
       display: block;
@@ -105,7 +105,16 @@
 */
 .footer {
   background-color: var(--hero-footer-color);
-  
+  &__logo {
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
   &__span {
     color: var(--main-background);
     }
@@ -114,11 +123,36 @@
   padding-top: 60px;
   padding-bottom: 60px;
   
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 768px;
+    flex-wrap: wrap;
+    vertical-align: baseline;
   }
+
+  @media screen and (min-width: 1200px) {
+  width: 1200px;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  text-align: left;
+  }
+ }
   &__address {
     text-align: center;
     margin: 20px auto;
     width: 231px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: 61px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+      margin-bottom: 0;
+      text-align: left;
+    }
 
     &-text {
     font-style: normal;
@@ -139,6 +173,15 @@
     display: block;
     width: 206px;
     margin: 60px auto;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-bottom: 0;
+    }
   }
   &__social-title {
     text-align: center;
@@ -148,12 +191,32 @@
     text-transform: uppercase;
     color: var(--main-background);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   &__social-link {
     background-color: rgba(255, 255, 255, 0.1);
   }
   &__icon {
     fill: var(--main-background);
+  }
+  &__form {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 570px;
+      display: flex;
+      margin-left: 93px;
+    }
   }
   &__form-text{
     text-transform: uppercase;
@@ -181,6 +244,11 @@
       font-size: 16px;
       line-height: 1.2;
       letter-spacing: 0.03em;
+      }
+      @media screen and (min-width: 768px) {}
+      @media screen and (min-width: 1200px) {
+        width: 340px;
+        margin-right: 12px;
       }
    }
    &__form-btn {

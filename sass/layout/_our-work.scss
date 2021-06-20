@@ -1,4 +1,4 @@
-/*.our-work {
+.our-work {
     display: flex;
     justify-content: space-between;
   }
@@ -23,8 +23,10 @@
         padding-bottom: 27px;
         background: rgba(47, 48, 58, 0.8);
       }
-  }*/
+  }
   .work {
-    display: none;
+    @media screen and (max-width: 1199px) { 
+      display: none;}
+   
   } 
   
