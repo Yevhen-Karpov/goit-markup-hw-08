@@ -106,7 +106,6 @@
 .footer {
   background-color: var(--hero-footer-color);
   &__logo {
-
     @media screen and (min-width: 768px) {
       display: block;
       margin-left: 100px;
@@ -117,27 +116,26 @@
   }
   &__span {
     color: var(--main-background);
-    }
+  }
   &__container {
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    width: 768px;
-    flex-wrap: wrap;
-    vertical-align: baseline;
-  }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 768px;
+      flex-wrap: wrap;
+      vertical-align: baseline;
+    }
 
-  @media screen and (min-width: 1200px) {
-  width: 1200px;
-  align-items: baseline;
-  flex-wrap: nowrap;
-  text-align: left;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      align-items: baseline;
+      flex-wrap: nowrap;
+      text-align: left;
+    }
   }
- }
   &__address {
     text-align: center;
     margin: 20px auto;
@@ -153,14 +151,14 @@
       margin-bottom: 0;
       text-align: left;
     }
-
-    &-text {
+  }
+  &-text {
     font-style: normal;
     color: var(--main-background);
     line-height: 1.7;
     margin-bottom: 9px;
-    }
   }
+
   &__contact {
     margin-bottom: 9px;
   }
@@ -199,9 +197,7 @@
   &__social-link {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  &__icon {
-    fill: var(--main-background);
-  }
+
   &__form {
     display: block;
     width: 450px;
@@ -209,7 +205,6 @@
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-      
     }
 
     @media screen and (min-width: 1200px) {
@@ -218,7 +213,7 @@
       margin-left: 93px;
     }
   }
-  &__form-text{
+  &__form-text {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
@@ -226,32 +221,33 @@
     font-weight: 700;
     color: var(--main-background);
     margin-bottom: 20px;
-   }
-   &__form-email {
+  }
+  &__form-email {
     width: 100%;
     padding: 15px 0 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     margin-bottom: 20px;
-    background-color:inherit;
+    background-color: inherit;
     color: var(--main-background);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     outline: none;
 
-      &::placeholder {
+    &::placeholder {
       color: rgba(255, 255, 255, 0.6);
       font-family: "Roboto";
       font-size: 16px;
       line-height: 1.2;
       letter-spacing: 0.03em;
-      }
-      @media screen and (min-width: 768px) {}
-      @media screen and (min-width: 1200px) {
-        width: 340px;
-        margin-right: 12px;
-      }
-   }
-   &__form-btn {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      width: 340px;
+      margin-right: 12px;
+    }
+  }
+  &__form-btn {
     text-align: left;
     width: 200px;
     font-family: "Roboto";
@@ -267,12 +263,14 @@
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-style: none;
-   }
+  }
 }
 .submit-icon {
   position: absolute;
   right: 28px;
   top: 10px;
   fill: var(--main-background);
-  
+}
+.footer__icon {
+  fill: var(--main-background);
 }
