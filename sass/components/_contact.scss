@@ -1,13 +1,16 @@
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .contact {
-
     &__icon {
       margin-right: 8px;
       fill: currentColor;
     }
   }
   .contact__link {
-    
     color: inherit;
     font-weight: 500;
     font-size: 12px;
@@ -15,15 +18,13 @@
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:hover,
-      &:focus
-      {
-        color: var(--accent-text-color);
-      }
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
   }
 }
 @media screen and (min-width: 1200px) {
-
   .contact {
     display: flex;
     padding-top: 32px;
@@ -31,32 +32,31 @@
     margin-left: auto;
 
     &__item {
-    display: flex;
-    align-items: center;
-    
+      display: flex;
+      align-items: center;
+
       &:not(:last-child) {
-         margin-right: 50px;
+        margin-right: 50px;
       }
     }
     &__icon {
       margin-right: 10px;
       fill: currentColor;
     }
-}
-    .contact__link {
-      display: flex;
-      color: inherit;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.2;
-      align-items: center;
-      letter-spacing: 0.02em;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-        &:hover,
-        &:focus
-        {
-          color: var(--accent-text-color);
-        }
+  }
+  .contact__link {
+    display: flex;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    align-items: center;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
     }
+  }
 }
