@@ -165,6 +165,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100vw;
+  height: 100vh;
   padding: 40px;
   border-color: var(--main-background);
   background-color: var(--main-background);
@@ -176,6 +177,7 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: auto;
   }
 }
 
