@@ -403,13 +403,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 362px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .filter {
+    width: 362px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -651,8 +656,6 @@ body {
   height: 22px;
   float: right;
   margin-left: 10px;
-  /*border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;*/
 }
 
 .header {
@@ -1005,12 +1008,12 @@ body {
 .members__photo {
   max-width: 100%;
   height: auto;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
   .members__photo {
     width: 450px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1040,33 +1043,6 @@ body {
   text-align: center;
 }
 
-/*.clients {
-    
-  }
-  .clients-link {
-    display: flex;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--fill-icon);
-    padding: 16px 32px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: center;
-    align-items: center;
-
-      &:hover,
-      &:focus {
-        border-color: var(--accent-text-color);
-
-        .clients-svg {
-          fill: var(--accent-text-color);
-        }
-      }
-  }
-  .clients-svg {
-    fill: var(--fill-icon);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
- */
 .clients {
   max-width: 100%;
   display: -ms-grid;
@@ -1355,7 +1331,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer__form-email {
-    width: 768px;
+    width: 450px;
   }
 }
 
@@ -1447,7 +1423,7 @@ body {
   font-weight: 400;
   top: 0;
   right: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -1462,6 +1438,24 @@ body {
   overflow: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .overlay {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
+}
+
 .text-card {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1472,7 +1466,7 @@ body {
 }
 
 .card-item {
-  width: 450px;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1509,5 +1503,10 @@ body {
   .card-item:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.card-photo {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */
