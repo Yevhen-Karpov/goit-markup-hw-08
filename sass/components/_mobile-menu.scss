@@ -16,6 +16,9 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  &__nav-list:not(:last-child) {
+    margin-bottom: 32px;
+  }
   &__contact {
     margin-bottom: 62px;
   }
@@ -45,6 +48,7 @@
   }
   &__link {
     font-size: 40px;
+    font-weight: 500;
     color: var(--title-text-color);
     &:hover,
     &:focus {
@@ -84,4 +88,7 @@
   height: 22px;
   float: right;
   margin-left: 10px;
+}
+.active {
+  color: var(--accent-text-color);
 }
