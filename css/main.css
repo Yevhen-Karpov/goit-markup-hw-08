@@ -726,6 +726,13 @@ body {
   fill: var(--accent-text-color);
 }
 
+@media screen and (min-width: 480px) {
+  .header__mobile-menu-btn {
+    position: static;
+    margin-left: 276px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header__mobile-menu-btn {
     display: none;
@@ -1114,7 +1121,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .clients__link {
-    width: 226px;
+    max-width: 226px;
     padding: 16px 32px;
   }
 }
